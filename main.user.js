@@ -29,6 +29,7 @@
       ["spaces", /^\/spaces(\/|$)/],
       ["models", /^\/models(\/|$)/],
       ["docs", /^\/docs(\/|$)/],
+      ["learn", /^\/learn(\/|$)/],
     ],
     OBSERVER_CONFIG: {
       childList: true,
