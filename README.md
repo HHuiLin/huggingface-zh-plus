@@ -6,8 +6,6 @@
 
 - `https://huggingface.co/welcome`
 
-项目当前先作为私有仓库维护。等词库和脚本稳定后，可以再改成公开仓库。
-
 ## 功能
 
 - 中文化 Hugging Face 的导航、按钮、标题、提示文字。
@@ -67,4 +65,3 @@ node --check main.user.js
 ## 许可证
 
 MIT License
-

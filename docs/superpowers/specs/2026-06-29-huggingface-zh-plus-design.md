@@ -4,7 +4,7 @@
 
 ## 目标
 
-创建一个新的 GitHub 仓库 `huggingface-zh-plus`，先设为私有，后续稳定后可改为公开。
+创建一个 GitHub 仓库 `huggingface-zh-plus`。
 
 项目提供一个 Hugging Face 中文化用户脚本，用来补齐 Hugging Face 页面里还没有汉化的内容，第一版重点覆盖新用户欢迎页：
 
@@ -44,7 +44,7 @@ huggingface-zh-plus/
 - `main.user.js`：负责脚本入口、监听页面变化、调用翻译逻辑。
 - `locals.js`：负责存放英文到中文的词库、正则翻译规则、选择器翻译规则、忽略规则。
 - `README.md`：用大白话说明安装、用途、维护方式，只写 `maboloshi/github-chinese` 作为参考项目。
-- `LICENSE`：使用 MIT License，方便以后公开。
+- `LICENSE`：使用 MIT License。
 
 ## 汉化范围
 
@@ -138,16 +138,13 @@ Hugging Face 是现代网页，很多内容不是一次性加载完的。
 1. 检查 JavaScript 语法是否能通过 Node 解析。
 2. 检查 `main.user.js` 是否能看到 `I18N` 词库。
 3. 检查欢迎页词条是否在 `locals.js` 中存在。
-4. 检查 Git 状态干净，并确认代码已推送到私有 GitHub 仓库。
+4. 检查 Git 状态干净，并确认代码已推送到 GitHub 仓库。
 
-## GitHub 发布策略
+## GitHub 发布检查
 
-仓库创建时使用私有仓库。
-
-后续公开前需要确认：
+发布前需要确认：
 
 - README 中没有私人信息。
 - 代码中没有账号 Token 或密钥。
 - README 只写 `maboloshi/github-chinese` 作为参考项目。
 - LICENSE 使用 MIT。
-

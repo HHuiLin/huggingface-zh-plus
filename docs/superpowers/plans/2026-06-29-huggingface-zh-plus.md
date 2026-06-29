@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build and publish a private GitHub repository containing a Hugging Face Chinese localization userscript with a split main script and dictionary.
+**Goal:** Build and publish a GitHub repository containing a Hugging Face Chinese localization userscript with a split main script and dictionary.
 
 **Architecture:** `main.user.js` owns Tampermonkey metadata, DOM scanning, mutation handling, URL change detection, menu switches, and safe execution. `locals.js` owns the `I18N` dictionary, page rules, ignore rules, static translations, regular expression rules, selector rules, and title translations.
 
@@ -286,7 +286,6 @@ git commit -m "feat: add userscript translator"
 README must explain:
 
 - This is a Hugging Face Chinese localization userscript.
-- The repository starts private and can be made public later.
 - Install Tampermonkey.
 - Install `main.user.js`.
 - `locals.js` is where missing translations are added.
@@ -334,17 +333,17 @@ Expected:
 - Syntax check exits 0.
 - Git status is clean after any final commit.
 
-- [ ] **Step 2: Create private GitHub repository**
+- [ ] **Step 2: Create GitHub repository**
 
 Run:
 
 ```bash
-gh repo create huggingface-zh-plus --private --source . --remote origin --push
+gh repo create huggingface-zh-plus --public --source . --remote origin --push
 ```
 
 Expected:
 
-- GitHub creates a private repository named `huggingface-zh-plus`.
+- GitHub creates a repository named `huggingface-zh-plus`.
 - Local remote `origin` points to the new repository.
 - Current branch is pushed.
 
@@ -360,6 +359,5 @@ gh repo view --json name,visibility,url
 Expected:
 
 - Name is `huggingface-zh-plus`.
-- Visibility is `PRIVATE`.
+- Visibility is shown by GitHub.
 - URL is shown for the new repository.
-
