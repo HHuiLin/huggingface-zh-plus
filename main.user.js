@@ -1,19 +1,19 @@
 // ==UserScript==
 // @name         Hugging Face 中文化增强脚本
-// @namespace    https://github.com/Alin/huggingface-zh-plus
+// @namespace    https://github.com/HHuiLin/huggingface-zh-plus
 // @description  中文化 Hugging Face 界面，重点补齐新用户欢迎页等漏翻内容。
 // @version      0.1.0
 // @author       Alin
 // @license      MIT
 // @match        https://huggingface.co/*
 // @match        https://hf-mirror.com/*
-// @require      ./locals.js
+// @require      https://raw.githubusercontent.com/HHuiLin/huggingface-zh-plus/main/locals.js
 // @run-at       document-start
 // @grant        GM_registerMenuCommand
 // @grant        GM_unregisterMenuCommand
 // @grant        GM_getValue
 // @grant        GM_setValue
-// @supportURL   https://github.com/Alin/huggingface-zh-plus/issues
+// @supportURL   https://github.com/HHuiLin/huggingface-zh-plus/issues
 // ==/UserScript==
 
 (function (window, document) {
